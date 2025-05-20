@@ -18,6 +18,7 @@ html, main {
   height: auto;
   font-family: var(--ff-base);
   background-color: var(--yellow);
+  
 
   padding: 1rem;
 }
@@ -26,6 +27,8 @@ html, main {
   background-color: var(--white);
   padding: 1.5rem;
   height: 32rem;
+  max-width: 24rem;
+  min-width: 22rem;
   
   display: flex;
   flex-direction: column;
@@ -37,11 +40,9 @@ html, main {
 
   & >#image {
     width: auto;
-
-    & > img {
-      width: 100%;
-      border-radius: .625rem;
-    }
+    height: 12.5rem;
+    border-radius: .625rem;
+    background: url(../assets/images/illustration-article.svg) no-repeat;
   }
 
   & > .learning {
@@ -64,16 +65,24 @@ html, main {
       font: 500 .75rem/1.5 var(--ff-base);
       color: var(--gray-950);
       margin-top: .75rem;
+      margin-bottom: .75rem;
     }
 
-    & > h1 {
+    & > a {
       font: 800 1.25rem/1.5 var(--ff-base);
       color: var(--gray-950);
-      margin-top: .75rem;
+
+      text-decoration: none;
+      cursor: pointer;
+      transform: color .3s;
+    }
+
+    a:hover {
+      color: var(--yellow);
     }
 
     & > p {
-      font: 500 .875rem/1.5 var(--ff-base);
+      font: 500 1rem/1.5 var(--ff-base);
       color: var(--gray-500);
       margin-top: .75rem;
     }
@@ -86,8 +95,8 @@ html, main {
     gap: .75rem;
 
     & > img {
-      width: 32px;
-      height: 32px;
+      width: 2rem;
+      height: 2rem;
     }
 
     & > span {
@@ -104,5 +113,19 @@ html, main {
   & > a {
     text-decoration: none;
     color: #008e28;
+  }
+}
+
+@media screen and (width >= 1280px) {    
+  .card-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    & > .card {
+      height: 33rem;
+      max-width: 24rem;
+    }
   }
 }
