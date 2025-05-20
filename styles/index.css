@@ -1,0 +1,27 @@
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --yellow: #f4d04e;
+  --gray-500: #6b6b6b;
+  --gray-950: #111111;
+  --white: #ffffff;
+
+  --ff-base: "Figtree", sans-serif;
+}
+
+
+
+#footer {
+  margin-top: 5rem;
+  font-size: .8rem;
+  text-align: center;
+
+  & > a {
+    text-decoration: none;
+    color: #008e28;
+  }
+}
