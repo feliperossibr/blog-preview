@@ -13,7 +13,36 @@
   --ff-base: "Figtree", sans-serif;
 }
 
+html, main {
+  width: 100%;
+  height: auto;
+  font-family: var(--ff-base);
+  background-color: var(--yellow);
 
+  padding: 1rem;
+}
+
+.card {
+  background-color: var(--white);
+  padding: 1.5rem;
+  height: 32rem;
+  
+  display: flex;
+  flex-direction: column;
+
+  border-radius: 1.25rem;
+  border: 1px solid black;
+
+  box-shadow: 8px 8px #000000;
+
+  & >#image {
+    width: auto;
+
+    & > img {
+      width: 100%;
+    }
+  }
+}
 
 #footer {
   margin-top: 5rem;
