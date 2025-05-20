@@ -40,6 +40,58 @@ html, main {
 
     & > img {
       width: 100%;
+      border-radius: .625rem;
+    }
+  }
+
+  & > .learning {
+    margin-block: 1.5rem;
+
+    & > span {
+      font: 800 .75rem/1.5 var(--ff-base);
+      color: var(--gray-950);
+      background-color: var(--yellow);
+
+      width: 4.57rem;
+      height: 1.63rem;
+
+      border-radius: .25rem;
+      padding: .25rem .75rem;
+      
+    }
+
+    & > h2 {
+      font: 500 .75rem/1.5 var(--ff-base);
+      color: var(--gray-950);
+      margin-top: .75rem;
+    }
+
+    & > h1 {
+      font: 800 1.25rem/1.5 var(--ff-base);
+      color: var(--gray-950);
+      margin-top: .75rem;
+    }
+
+    & > p {
+      font: 500 .875rem/1.5 var(--ff-base);
+      color: var(--gray-500);
+      margin-top: .75rem;
+    }
+  }
+
+  & > #avatar {
+    display: flex;
+    margin-top: .75rem;
+    align-items: center;
+    gap: .75rem;
+
+    & > img {
+      width: 32px;
+      height: 32px;
+    }
+
+    & > span {
+      font: 800 .875rem/1.5 var(--ff-base);
     }
   }
 }
